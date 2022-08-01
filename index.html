@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+            <script type="module" src="./assets/js/generatePassword/assessCriteria.js"></script>
+        <script type="module" src="./assets/js/generatePassword/main.js"></script>
+    </head>
+    <body>
+        <header><h1>Password Generator</h1></header>
+        <section class="container">
+            <h3>Generate a password: </h1>
+            <div class="password-container">
+                <textarea placeholder="Your Secure Password" id="password"></textarea>
+            </div>
+
+            <button id="generate-password" class="btn">Generate Password</button>
+            <div class="options-container">
+                <h2>Generation Criteria:</h2>
+                <div class="options-buttons-container">
+                    <div class="input-cont">
+
+                        <label for="length">Length:</label>
+                        <input type="number" name="criteria" value="12" id="length">
+                        <div class="hover-text">Min:8 Max:128</div>
+                    </div>
+                    <div class="input-cont">
+                        <label for="lowercase"> Lowercase:</label>
+                        <input type="checkbox" checked name="criteria" id='lowercase'>
+                    </div>
+                    <div class="input-cont">
+                        <span></span> <label for="uppercase"> Upercase:</label>
+                        <input type="checkbox" checked name="criteria" id='uppercase'>
+                    </div>
+                    <div class="input-cont">
+                        <label for="numbers"> Numbers:</label>
+                        <input type="checkbox" checked name="criteria" id='numbers'>
+                    </div>
+                    <div class="input-cont">
+                        <label for="special-chars"> Special Characters:</label>
+                        <input type="checkbox" checked name="criteria"
+                            id='special-chars'>
+                    </div>
+                    <div class="input-cont">
+                        <label for="pattern">Pattern</label>
+                        <input type="checkbox" checked name="criteria" id="pattern">
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+    </body>
+</html>

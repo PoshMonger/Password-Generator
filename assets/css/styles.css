@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    --main-bg-color: #121212;
+    --secondary-bg-color:#4c4e4c;
+    --main-text-color: white;
+    --offwhite:rgb(197, 194, 194);
+    --main-cont-gradient: linear-gradient(to bottom, var(--main-bg-color),var(--secondary-bg-color));
+
+    --red: rgb(163, 122, 122);
+    --blue: rgb(16, 16, 18);
+    border-radius: 20px;
+}
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+header {
+    text-align: center;
+    height: 10%;
+    padding: 10px;
+    margin-bottom: 30px
+}
+
+#length {
+    width: 100%;
+    min-width: fit-content;
+    margin: auto;
+
+}
+
+#password {
+
+    margin: auto;
+
+    width: 60%;
+    height: fit-content;
+    text-align: center;
+
+}
+
+#generate-password {
+    color:var(--offwhite);
+    border: #121212 1px solid;
+    margin: 4px
+}
+
+.container {
+   
+  background: var(--main-cont-gradient);
+
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    min-height: 600px;
+    width: 70% !important;
+    padding: 3% !important;
+    background-color: var(--linear-gradient);
+ 
+    color:var(--offwhite);
+}
+
+.password-container {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    border: var(--main-bg-color) 1px solid;
+    border-radius: 20px;
+    margin-bottom: 10px
+}
+
+
+
+.options-container {
+    margin-top: 30px !important;
+    height: 50%;
+    background: linear-gradient(to bottom, var(--red), var(--blue));
+    color:var(--offwhite);
+    padding:3%
+
+}
+.btn{
+    background: linear-gradient(to bottom, var(--red), var(--blue));
+    width:30%;
+}
+
+.options-buttons-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px
+}
+
+.input-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 8px;
+    height: fit-content;
+    width: 25%;
+
+}
+
+.input-cont .hover-text {
+    background-color: rgb(224, 216, 216);
+    color:var(--main-bg-color);
+    visibility: hidden;
+    z-index: 1;
+    width: fit-content;
+    padding: 2% !important;
+    border: black 1px dotted;
+
+
+}
+
+.input-cont:hover .hover-text {
+
+    visibility: visible
+}
+
+
+
+/* Phone and Mobile Devices */
+@media (min-width:100px) and (max-width:480px) {
+    .container {
+        margin: auto;
+
+        height: 100%;
+        min-height: 600px;
+        width: 90% !important;
+
+
+
+    }
+
+    .options-buttons-container {
+        height: fit-content;
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25%;
+
+    }
+}
+
+
+
+/* Tablets */
+@media (min-width:481px) and (max-width:768px) {
+    .container {
+        margin: auto;
+
+        height: 100%;
+        min-height: 600px;
+        width: 90% !important;
+
+
+
+    }
+
+    .options-buttons-container {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 50%;
+
+    }
+}
+
+/* Laptop */
+@media (min-width:769px) and (max-width:1024px) {}
+
+/* Desktop and larger monitors */
+@media (min-width:1025px) and (max-width:1200px) {}
