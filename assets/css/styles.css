@@ -9,6 +9,7 @@
     --red: rgb(163, 122, 122);
     --blue: rgb(16, 16, 18);
     border-radius: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -58,18 +59,18 @@ header {
 
     display: flex;
     flex-direction: column;
-    height: 80%;
+    height: 90%;
     min-height: 600px;
-    width: 60% !important;
+    width: 60% ;
     padding: 3% !important;
     background-color: var(--linear-gradient);
- 
+ margin: auto;
     color:var(--offwhite);
 }
 
 .password-container {
     display: flex;
-    height: 50%;
+    height: 70%;
     width: 100%;
     background-color: white;
     border: var(--main-bg-color) 1px solid;
@@ -90,6 +91,7 @@ header {
 .btn{
     background: linear-gradient(to bottom, var(--red), var(--blue));
     width:30%;
+    height:20%;
 }
 
 .options-buttons-container {
@@ -138,7 +140,7 @@ header {
 
         height: 100%;
         min-height: 600px;
-        width: 90% !important;
+        width: 90%;
 
 
 
@@ -163,7 +165,7 @@ header {
 
         height: 100%;
         min-height: 600px;
-        width: 90% !important;
+        width: 90% ;
 
 
 
@@ -179,7 +181,43 @@ header {
 }
 
 /* Laptop */
-@media (min-width:769px) and (max-width:1024px) {}
+@media (min-width:769px) and (max-width:1024px) {
+
+
+    .container {
+   
+        background: var(--main-cont-gradient);
+      
+          display: flex;
+          flex-direction: column;
+          height: 90%;
+          min-height: 600px;
+          width: 60% ;
+          padding: 3% !important;
+          background-color: var(--linear-gradient);
+       margin: auto;
+          color:var(--offwhite);
+
+      }
+
+}
 
 /* Desktop and larger monitors */
-@media (min-width:1025px) and (max-width:1200px) {}
+@media (min-width:1025px) and (max-width:1800px) {
+
+    .container {
+   
+        background: var(--main-cont-gradient);
+      
+          display: flex;
+          flex-direction: column;
+          height: 90%;
+          min-height: 600px;
+          width: 60% ;
+          padding: 3% !important;
+          background-color: var(--linear-gradient);
+       margin: auto;
+          color:var(--offwhite);
+       max-width: 800px;
+      }
+}
