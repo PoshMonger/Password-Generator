@@ -60,7 +60,7 @@ header {
     flex-direction: column;
     height: 80%;
     min-height: 600px;
-    width: 70% !important;
+    width: 60% !important;
     padding: 3% !important;
     background-color: var(--linear-gradient);
  
